@@ -1,1 +1,10 @@
-Test
+# HSSN
+HSSN: An ontology for Hybrid Semantic Sensor Networks
+Abstract:
+Recent advances in sensor technology, have allowed sensor networks to impact a large spectrum of domains (e.g., health, environ-
+ment). These networks generate huge amounts of heterogeneous data, that is hard to represent, share, and integrate. Therefore, semantic web techniques, such as ontologies, have been widely adopted for information representation in sensor network modeling. However, some existing works do not fully address the following challenges: (i) representing different sensor types (e.g., mobile sensors), in order to enrich the network with different data and ensure better coverage; (ii) representing a variety of platforms (e.g., environments, devices) for sensor deployment, therefore, integrating new components (e.g., mobile phones); (iii) representing the diverse data (scalar/multimedia) needed for various applications (e.g., event detection); and (iv) proposing a generic model to allow re-usability in various application domains. In this paper, we propose Hybrid-SSN, an ontology that extends the Semantic Sensor Network (SSN) ontology. SSN is already re-usable (widely used in different contexts), and considers various platforms. Our proposal extends the representation of sensors, sensed data/properties, and deployment environments. We evaluate the
+consistency of our ontology structure, the accuracy of our additions, and their impact on performance.
+
+
+The Ontology documentation is stored in the OWLDOC repository.
+Access the owldoc/index.html file to navigate through the documentation.
