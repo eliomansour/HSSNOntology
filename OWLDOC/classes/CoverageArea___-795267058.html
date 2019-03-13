@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='index.html' class='' >Classes</a>
+<a href='../objectproperties/index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Class: CoverageArea</h2>
+
+<div id='annotations_(4)'>
+<h4>Annotations (4)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/comment___1501100887.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a> <span class='literal'>"A Coverage Area is a geographical zone that includes a set of Locations within the range of at least one sensor."</span></li>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"CoverageArea"</span></li>
+<li class="asserted"><a href="../annotationproperties/definition___428285432.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#definition">skos:definition</a> <span class='literal'>"A CoverageArea is a geographical zone that includes a set of Locations within the range of one sensor. The CoverageArea  is defined by a point SL, an angle SA, and a range SR where:<br />      SL is the SensingLocation, i.e., of the sensor covering the area (depending on the sensor type Mobile | Scalar the CoverageArea moves, rotates, or remains still).<br />      SA is the SensingAngle, specified in the sensor's technical sheet.<br />      SR is the SensingRange, i.e., the distance in meters in any given direction such that the sensor is still capable of sensing. This value is also specified by the sensor's technical sheet."</span></li>
+<li class="asserted"><a href="../annotationproperties/example___119732751.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#example">skos:example</a> <span class='literal'>"Example 1: <br />For a mobile temperature sensor sens1:<br />       SL is the location of the sensor<br />       SA = 360°<br />       SR = 15m<br />Therefore the coverage area is the circle of center P and radius (range) 15m.<br /><br />Example 2: <br />For a static video surveillance camera sens2:<br />       SL is the location of the sensor<br />       SA = 45°<br />       SR = 30m<br />Therefore the coverage area is the sector of center SS, spreading on a 45° angle, and extending to a 30m range."</span></li>
+</ul>
+</div>
+</div><!-- annotations (4) -->
+
+
+<div id='superclasses_(8)'>
+<h4>Superclasses (8)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../objectproperties/previouslyCoveredBy___-412486526.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#previouslyCoveredBy">previouslyCoveredBy</a> <span class='some'>some</span> <a href="MobileSensor___-1692141451.html" class='Class' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#MobileSensor">MobileSensor</a></li>
+<li class="asserted"><a href="../objectproperties/currentlyCoveredBy___-992826176.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#currentlyCoveredBy">currentlyCoveredBy</a> <span class='min'>min</span> 1 <a href="Sensor___-1260429815.html" class='Class' title="http://www.w3.org/ns/sosa/Sensor">Sensor</a></li>
+<li class="asserted"><a href="../objectproperties/includes___663000612.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#includes">includes</a> <span class='min'>min</span> 1 <a href="Location___-1906836991.html" class='Class' title="http://mssn.sigappfr.org/mssn/Location">Location</a></li>
+<li class="asserted"><a href="../objectproperties/horizontalSpreadDefinedBy___-158100904.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefinedBy">horizontalSpreadDefinedBy</a> <span class='exactly'>exactly</span> 1 <a href="HorizontalSensingAngle___475977755.html" class='Class' title="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalSensingAngle">HorizontalSensingAngle</a></li>
+<li class="asserted"><a href="../objectproperties/verticalSpreadDefinedBy___475293894.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefinedBy">verticalSpreadDefinedBy</a> <span class='exactly'>exactly</span> 1 <a href="VerticalSensingAngle___1399443565.html" class='Class' title="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalSensingAngle">VerticalSensingAngle</a></li>
+<li class="asserted"><a href="../objectproperties/atCoverageTime___2030701057.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#atCoverageTime">atCoverageTime</a> <span class='exactly'>exactly</span> 1 <a href="TemporalEntity___-1189218844.html" class='Class' title="http://www.w3.org/2006/time#TemporalEntity">TemporalEntity</a></li>
+<li class="asserted"><a href="../objectproperties/centeredAround___-584153094.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#centeredAround">centeredAround</a> <span class='exactly'>exactly</span> 1 <a href="SensingLocation___2012218105.html" class='Class' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#SensingLocation">SensingLocation</a></li>
+<li class="asserted"><a href="../objectproperties/delimitedBy___343091593.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#delimitedBy">delimitedBy</a> <span class='exactly'>exactly</span> 1 <a href="SensingRange___-67092341.html" class='Class' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#SensingRange">SensingRange</a></li>
+</ul>
+</div>
+</div><!-- superclasses (8) -->
+
+
+<div id='usage_(21)'>
+<h4>Usage (21)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="Location___-1906836991.html" class='Class' title="http://mssn.sigappfr.org/mssn/Location">Location</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/includedIn___1412915290.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#includedIn">includedIn</a> <span class='min'>min</span> 0 <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="HorizontalSensingAngle___475977755.html" class='Class' title="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#HorizontalSensingAngle">HorizontalSensingAngle</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/horizontalSpreadDefines___1644762736.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefines">hotizontalSpreadDefines</a> <span class='exactly'>exactly</span> 1 <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="VerticalSensingAngle___1399443565.html" class='Class' title="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#VerticalSensingAngle">VerticalSensingAngle</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/verticalSpreadDefines___1497935966.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefines">verticalSpreadDefines</a> <span class='exactly'>exactly</span> 1 <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="MobileSensor___-1692141451.html" class='Class' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#MobileSensor">MobileSensor</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/hasPastCoverageArea___689925082.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#hasPastCoverageArea">hasPastCoverageArea</a> <span class='some'>some</span> <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="SensingLocation___2012218105.html" class='Class' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#SensingLocation">SensingLocation</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/centers___1237980183.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#centers">centers</a> <span class='exactly'>exactly</span> 1 <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="SensingRange___-67092341.html" class='Class' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#SensingRange">SensingRange</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/delimits___1395943730.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#delimits">delimits</a> <span class='exactly'>exactly</span> 1 <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="Sensor___-1260429815.html" class='Class' title="http://www.w3.org/ns/sosa/Sensor">Sensor</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/currentlyCoversA___825860568.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#currentlyCoversA">currentlyCoversA</a> <span class='exactly'>exactly</span> 1 <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="../objectproperties/horizontalSpreadDefinedBy___-158100904.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefinedBy">horizontalSpreadDefinedBy</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="../objectproperties/verticalSpreadDefinedBy___475293894.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefinedBy">verticalSpreadDefinedBy</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="../objectproperties/atCoverageTime___2030701057.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#atCoverageTime">atCoverageTime</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="../objectproperties/centeredAround___-584153094.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#centeredAround">centeredAround</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="../objectproperties/currentlyCoveredBy___-992826176.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#currentlyCoveredBy">currentlyCoveredBy</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="../objectproperties/delimitedBy___343091593.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#delimitedBy">delimitedBy</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="../objectproperties/previouslyCoveredBy___-412486526.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#previouslyCoveredBy">previouslyCoveredBy</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="../objectproperties/horizontalSpreadDefines___1644762736.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#horizontalSpreadDefines">hotizontalSpreadDefines</a> <span class='keyword'>Range</span> <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="../objectproperties/verticalSpreadDefines___1497935966.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Hybrid-SSN#verticalSpreadDefines">verticalSpreadDefines</a> <span class='keyword'>Range</span> <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="../objectproperties/centers___1237980183.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#centers">centers</a> <span class='keyword'>Range</span> <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="../objectproperties/currentlyCoversA___825860568.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#currentlyCoversA">currentlyCoversA</a> <span class='keyword'>Range</span> <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="../objectproperties/delimits___1395943730.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#delimits">delimits</a> <span class='keyword'>Range</span> <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="../objectproperties/hasPastCoverageArea___689925082.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#hasPastCoverageArea">hasPastCoverageArea</a> <span class='keyword'>Range</span> <span class='Class active-entity'>CoverageArea</span></li>
+<li class="asserted"><a href="../objectproperties/includedIn___1412915290.html" class='Object Property' title="http://spider.sigappfr.org/Research_Projects/Mob-SSN#includedIn">includedIn</a> <span class='keyword'>Range</span> <span class='Class active-entity'>CoverageArea</span></li>
+</ul>
+</div>
+</div><!-- usage (21) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

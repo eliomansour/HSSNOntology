@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='index.html' class='' >Classes</a>
+<a href='../objectproperties/index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Class: 'Survival Range'</h2>
+
+<div id='annotations_(4)'>
+<h4>Annotations (4)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/comment___1501100887.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a> <span class='literal'>"Describes survival capabilities of a System under some specified Conditions. For example, to the lifetime of a System under a specified temperature range.<br /><br />    In the absence of SurvivalProperties, simply describes the Conditions a System can be exposed to without damage. For example, the temperature range a System can withstand before being considered damaged.<br /><br />    The System continues to operate as defined using SystemCapability. If, however, the OperatingProperty is violated, the System is operating 'out of operating range' and SystemCapability specifications may no longer hold."</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/isDefinedBy___449337134.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy</a> http://www.w3.org/ns/ssn/systems/ 
+<a href='http://www.w3.org/ns/ssn/systems/' class='urlOption' target='_blank' ><img src="../images/external.png" title="Attempt to open link in another window" /></a></li>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"Survival Range"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/definition___428285432.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#definition">skos:definition</a> <span class='literal'>"Describes SurvivalProperties of a System under some specified Conditions. For example, the lifetime of a System under a specified temperature range.<br /><br />    In the absence of SurvivalProperties, simply describes the Conditions a System can be exposed to without damage. For example, the temperature range a System can withstand before being considered damaged.<br /><br />    The System continues to operate as defined using SystemCapability. If, however, the SurvivalRange is violated, the System is 'damaged' and SystemCapability specifications may no longer hold."</span> <span style='color: black;'>@en</span></li>
+</ul>
+</div>
+</div><!-- annotations (4) -->
+
+
+<div id='superclasses_(5)'>
+<h4>Superclasses (5)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="Property___-1603112404.html" class='Class' title="http://www.w3.org/ns/ssn/Property">Property</a></li>
+<li class="asserted"><a href="../objectproperties/hasSurvivalProperty___1061243823.html" class='Object Property' title="http://www.w3.org/ns/ssn/systems/hasSurvivalProperty">'has&nbsp;survival&nbsp;property'</a> <span class='only'>only</span> <a href="SurvivalProperty___-93049579.html" class='Class' title="http://www.w3.org/ns/ssn/systems/SurvivalProperty">'Survival&nbsp;Property'</a></li>
+<li class="asserted"><a href="../objectproperties/inCondition___-527551688.html" class='Object Property' title="http://www.w3.org/ns/ssn/systems/inCondition">'in&nbsp;condition'</a> <span class='only'>only</span> <a href="Condition___-684570947.html" class='Class' title="http://www.w3.org/ns/ssn/systems/Condition">Condition</a></li>
+<li class="asserted"><span class='keyword'>InverseOf</span> <a href="../objectproperties/hasSurvivalRange___-208636441.html" class='Object Property' title="http://www.w3.org/ns/ssn/systems/hasSurvivalRange">'has&nbsp;survival&nbsp;range'</a> <span class='only'>only</span> <a href="System___1816891014.html" class='Class' title="http://www.w3.org/ns/ssn/System">System</a></li>
+<li class="asserted"><a href="../objectproperties/inCondition___-527551688.html" class='Object Property' title="http://www.w3.org/ns/ssn/systems/inCondition">'in&nbsp;condition'</a> <span class='min'>min</span> 1 <a href="Thing___-200689702.html" class='Class' title="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a></li>
+</ul>
+</div>
+</div><!-- superclasses (5) -->
+
+
+<div id='usage_(2)'>
+<h4>Usage (2)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="System___1816891014.html" class='Class' title="http://www.w3.org/ns/ssn/System">System</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/hasSurvivalRange___-208636441.html" class='Object Property' title="http://www.w3.org/ns/ssn/systems/hasSurvivalRange">'has&nbsp;survival&nbsp;range'</a> <span class='only'>only</span> <span class='Class active-entity'>'Survival&nbsp;Range'</span></li>
+<li class="asserted"><a href="SurvivalProperty___-93049579.html" class='Class' title="http://www.w3.org/ns/ssn/systems/SurvivalProperty">'Survival&nbsp;Property'</a> <span class='keyword'>&sube;</span> <span class='keyword'>InverseOf</span> <a href="../objectproperties/hasSurvivalProperty___1061243823.html" class='Object Property' title="http://www.w3.org/ns/ssn/systems/hasSurvivalProperty">'has&nbsp;survival&nbsp;property'</a> <span class='only'>only</span> <span class='Class active-entity'>'Survival&nbsp;Range'</span></li>
+</ul>
+</div>
+</div><!-- usage (2) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>
